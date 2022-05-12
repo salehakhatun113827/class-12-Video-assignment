@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 1000px;
+    margin: auto;
+}
+
+/* * list-style */
+.ul-2{
+    list-style: square;
+}
+.ol-2{
+    list-style: bengali;
+}
+.ul-3{
+    list-style-image: url(https://i.postimg.cc/YqJZ50Ts/right-arrow.png);
+    list-style-position: inside;
+
+}
+/* * dropdown-menu */
+.header-menu{
+    background-color: #00a8ff;
+}
+.header-menu ul{
+    text-align: center;
+}
+.header-menu ul li{
+    display:inline-block;
+    margin-left: -4px;
+}
+.header-menu ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px 35px;
+    display: inline-block;
+    font-size: 20px;
+    border-right: 1px solid whitesmoke;
+}
+.header-menu ul li:nth-child(1) {
+    border-left: 1px solid whitesmoke;
+}
+.header-menu ul li:hover > a{
+    background-color: #0097e6;
+    cursor: pointer;
+}
+/* * dropdown-menu start */
+.header-menu ul li {
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 250px;
+    background-color:#00a8ff ;
+    border-top: 1px solid whitesmoke;
+    transition: .5s;
+}
+.header-menu ul li ul li{
+    display: block;
+    margin-left: 0px;
+}
+.header-menu ul li ul li a{
+    display: block;
+    border-bottom: 1px solid whitesmoke;
+}
+.header-menu ul ul li:nth-child(1) {
+    border-left: none;
+}
+/* * hover-part */
+.header-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin:top ;
+}
+.header-menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+.header-menu ul li ul li a:hover{
+    cursor: pointer;
+}
+/* *  social-menu */
+
+.social-menu ul{
+    text-align: center;
+}
+.social-menu ul li{
+    display: inline-block;
+}
+.social-menu ul li a{
+    background-color: #00a8ff;
+    color:#ffffff;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    line-height: 130px;
+    margin-bottom: 250px;
+}
+.social-menu ul li a i{
+    font-size: 55px;
+}
